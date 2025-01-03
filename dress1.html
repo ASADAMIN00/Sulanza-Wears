@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Function to redirect to the order page with selected size and color
+        function sendFormData() {
+            var size = document.getElementById("size").value;
+            var color = document.getElementById("color").value;
+            
+            // Redirect to order.html with size and color as query parameters
+            window.location.href = "order.html?size=" + size + "&color=" + color;
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="dresses.html">Dresses</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="order.html">Order Form</a></li>
+        </ul>
+    </nav>
+
+    <h1>Dress 1</h1>
+    <img src="https://cdn.shopify.com/s/files/1/1762/5129/files/women-in-patiala-salwar-from-punjab.jpg?v=1654655251" alt="Dress 1">
+    <p>Select your size and color:</p>
+    
+    <form>
+        <label for="size">Size</label>
+        <select id="size" name="size">
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+        </select>
+        
+        <label for="color">Color</label>
+        <select id="color" name="color">
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Black">Black</option>
+        </select>
+        
+        <button type="button" onclick="sendFormData()">Order This Dress</button> 
+    </form>
+
+</body>
+</html>

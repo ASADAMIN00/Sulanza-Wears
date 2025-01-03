@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script> <!-- EmailJS SDK -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="dresses.html">Dresses</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="order.html">Order Form</a></li>
+        </ul>
+    </nav>
+    <h1>Contact Us</h1>
+    
+    <form id="contactForm" onsubmit="sendContactForm(event)">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        // Initialize EmailJS
+        (function() {
+            emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS user ID
+        })();
+
+        // Function to send the contact form data
+        function sendContactForm(event) {
+            event.preventDefault(); // Prevent the form from reloading the page on submit
+
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var subject = document.getElementById("subject").value;
+            var message = document.getElementById("message").value;
+
+            // Send email using EmailJS
+            emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+                name: name,
+                email: email,
+                subject: subject,
+                message: message
+            })
+            .then(function(response) {
+                alert("Your message has been sent successfully!");
+                document.getElementById("contactForm").reset(); // Reset form after success
+            }, function(error) {
+                alert("Failed to send your message. Please try again.");
+            });
+        }
+    </script>
+
+</body>
+</html>

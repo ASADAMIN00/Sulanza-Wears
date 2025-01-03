@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Dress</title>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script> <!-- EmailJS SDK -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="dresses.html">Dresses</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="order.html">Order Form</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Order Your Dress</h1>
+
+        <form id="orderForm" onsubmit="sendFormData(event)">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="dress">Dress Name:</label>
+            <select id="dress" name="dress">
+                <option value="Dress 1">Dress 1</option>
+                <option value="Dress 2">Dress 2</option>
+                <option value="Dress 3">Dress 3</option>
+            </select>
+
+            <label for="size">Size:</label>
+            <select id="size" name="size">
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+            </select>
+
+            <label for="color">Color:</label>
+            <select id="color" name="color">
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Black">Black</option>
+            </select>
+
+            <label for="message">Additional Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Order This Dress</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
