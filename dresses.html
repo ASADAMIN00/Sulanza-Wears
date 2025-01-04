@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,27 +6,41 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="dresses.html">Dresses</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="order.html">Order Form</a></li>
-        </ul>
-    </nav>
-    <h1>Our Dresses</h1>
-    <div class="dress-gallery">
-        <img src="https://cdn.shopify.com/s/files/1/1762/5129/files/women-in-patiala-salwar-from-punjab.jpg?v=1654655251" alt="Dress 1"onclick="openDressPage('dress1.html')"width="500px" height="500px"></onclick>
-        <img src="https://cdn.shopify.com/s/files/1/1762/5129/files/women-in-patiala-salwar-from-punjab.jpg?v=1654655251" alt="Dress 2" onclick="openDressPage('dress2.html')"width="500px" height="500px"></onclick>
-        <img src="https://4.imimg.com/data4/SU/CO/MY-15490136/ladies-fashion-wear-500x500.jpg" alt="Dress 3" onclick="openDressPage('dress3.html')"width="500px" height="500px"></onclick>>
-    </div>
+    <header class="header-section">
+        <div class="header-container">
+            <!-- Left Div: Logo and Text -->
+            <div class="header-left">
+                <img src="logo.jpg" alt="SULANZA WEARS " class="logo">
+                <p class="logo-text">SULANZA WEARS</p>
+            </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="dresses.html">Dresses</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="order.html">Order Form</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <script>
-        function openDressPage(page) {
-            window.location.href = page;
-        }
-    </script>
+    <main>
+        <section class="gallery">
+            <h1>Our Dresses</h1>
+            <div class="dress-list">
+                <a href="dress1.html"><img src="dress1.jpg" alt="Dress 1"></a>
+                <a href="dress2.html"><img src="dress2.jpg" alt="Dress 2"></a>
+                <a href="dress3.html"><img src="dress3.jpg" alt="Dress 3"></a>
+            </div>
+        </section>
+    </main>
 
+    <footer class="footer">
+        <footer class="footer">
+            <div class="container1">
+                 <p class="footer-credit">© 2024 MUHAMMAD ASADULLAH AMIN. All Rights Reserved.</p>
+    
 </body>
+    <script src="script.js"></script>
 </html>

@@ -58,3 +58,27 @@ function sendFormData(event) {
         alert("Failed to submit the order. Please try again.");
     });
 }
+  // Function to redirect to the order page with selected size and color
+  function sendFormData() {
+    var size = document.getElementById("size").value;
+    var color = document.getElementById("color").value;
+    
+    // Redirect to order.html with size and color as query parameters
+    window.location.href = "order.html?size=" + size + "&color=" + color;
+}
+ // Function to redirect to the order page with selected size and color
+ function sendFormData() {
+    var size = document.getElementById("size").value;
+    var color = document.getElementById("color").value;
+    
+    // Redirect to order.html with size and color as query parameters
+    window.location.href = "order.html?size=" + size + "&color=" + color;
+}
+  // Function to redirect to the order page with selected size and color
+  function sendFormData() {
+    var size = document.getElementById("size").value;
+    var color = document.getElementById("color").value;
+    
+    // Redirect to order.html with size and color as query parameters
+    window.location.href = "order.html?size=" + size + "&color=" + color;
+}

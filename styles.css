@@ -8,8 +8,9 @@
     margin-top: 10px;
     font-size: 1.2rem;
     text-align:center;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
 }
 /* Body Styling */
 body {
@@ -30,6 +31,8 @@ nav ul {
 nav ul li {
     display: inline;
     margin-right: 20px;
+    align-items: center;
+    text-align: center;
 }
 
 nav ul li a {
@@ -152,14 +155,9 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
+
 h1 {
-    margin: 0;
+    margin: 20px;
 }
 .about-container {
     width: 80%;
@@ -234,4 +232,330 @@ button {
 }
 button:hover {
     background-color: #45a049;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #1f1f1f;
+}
+
+/* Header Section */
+.header-section {
+    /* background-color: #1f1f1f; */
+    background-color: white;
+    padding: 20px 0;
+}
+
+.header-container1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: #ffffff;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+.logo-text {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    /* color: #f0a500; */
+    color: #d11816;
+    text-align: center;
+}
+
+.header-center {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #d11816;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    transition: 0.5s;
+    color: #9e2620;
+    text-decoration: underline;
+}
+
+.header-right {
+    text-align: right;
+}
+
+.order-now-btn {
+    display: inline-block;
+    /* background-color: #f0a500; */
+    background-color: #d11816;
+    /* color: #1f1f1f; */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.order-now-btn:hover {
+    transition: 0.5s;
+    background-color: #9e2620;
+    transform: scale(1.05);
+    /* text-decoration: underline; */
+}
+/* About Us Section */
+.about-section {
+    /* background-color: #1f1f1f; */
+    background-color: #1f1f1f;
+    color: #ffffff;
+    /* color: black; */
+    padding: 60px 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.about-content {
+    flex: 1;
+    padding: 20px;
+    max-width: 50%;
+    box-sizing: border-box;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    color: #f0a500;
+    color: #d11816;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 30px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #1f1f1f;
+}
+
+.about-image {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-image img {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Footer Section */
+.footer {
+    
+   
+    color: #ffffff;
+    padding: 5px 5px;
+    text-align: center;
+    /* height: 25.6vh; */
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 1.5rem;
+    color: #f0a500;
+    color: #d11816;
+    margin: 0;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    color: #d11816;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #f0a500;
+    transition: 0.5s;
+    color: #9e2620;
+    text-decoration: underline;
+}
+
+.footer-social {
+    margin: 20px 0;
+}
+
+.social-icon {
+    color: #ffffff;
+    color: #d11816;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #f0a500;
+    transition: 0.5s;
+    color: #9e2620;
+    text-decoration: underline;
+
+}
+
+.footer-credit {
+    font-size: 0.9rem;
+    color: #c1c1c1;
+    color: white;
+    margin-top: 20px;
+}
+/* Responsive Design */
+@media (max-width: 860px) {
+    .header-center {
+        margin: 20px 0;
+    }
+
+    .nav-links {
+        /* flex-direction: column; */
+        gap: 15px;
+    }
+    .logo {
+        display: none;
+    }
+    .logo-text {
+        display: none;
+    }
+    .order-now-btn {
+        display: none;
+    }
+    .footer-links li {
+        display: inline;
+        margin: 0 5px;
+    }
+    .footer-links {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content, .about-image {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .about-content h2 {
+        font-size: 2rem;
+    }
+
+    .about-content p {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 485px) {
+    .nav-links {
+        gap: 15px;
+    }
+    .header-section {
+        padding: 10px 0px;
+    }
+    .nav-links a {
+        font-size: 12px;
+    }
+    .footer-links li {
+        display: inline;
+        margin: 0 4px;
+    }
+    .footer-links {
+        font-size: 12px;
+    }
+}
+@media (max-width: 325px) {
+    .nav-links {
+        gap: 10px;
+    }
+    .header-section {
+        padding: 10px 0px;
+    }
+    .nav-links a {
+        font-size: 12px;
+    }
+    .footer-links li {
+        display: inline;
+        margin: 0 3px;
+    }
+    .footer-links {
+        font-size: 8px;
+    }
 }
